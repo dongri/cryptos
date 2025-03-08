@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-auto-rows: minmax(100vh, auto);
+}
+section {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  background: #f5f5f5;
+}
+h2 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+iframe {
+  width: 100%;
+  height: calc(100vh - 40px);
+  border: none;
+}
+.section-content {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.section-content.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
