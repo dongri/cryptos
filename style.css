@@ -38,3 +38,22 @@ iframe {
   opacity: 1;
   transform: translateY(0);
 }
+
+.links {
+  margin: 50px;
+  display: flex;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2em;
+  display: block;
+  margin-bottom: 10px;
+}
